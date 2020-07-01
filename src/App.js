@@ -69,16 +69,27 @@ function App() {
               <option value="Australia">Australia</option>
             </select>
           </label>
-          <label>
-            city:{" "}
+          <label style={{ margin: "1% 0" }}>
+            City:{" "}
             <input
               type="text"
               name="city"
+              placeholder="enter the city name"
               value={timezone.city}
               onChange={(event) => handleChange(event)}
             />
           </label>
-          <button type="submit">Submit</button>
+          <button
+            type="submit"
+            style={{
+              width: "17%",
+              margin: "0.3% 0",
+              padding: "0.5%",
+              borderRadius: "6px",
+            }}
+          >
+            Submit
+          </button>
         </form>
         <h3>Select the type of Clocks you want to see:</h3>
         <div className="clocksTypeContainer">
@@ -96,7 +107,11 @@ function App() {
           {timezoneToDisplay.city}
         </h4>
       </div>
-      {bottomContainer ? <AnalogClocks /> : <DigitalClocks />}
+      {bottomContainer ? (
+        <AnalogClocks timeAsNumber={timeAsNumber} />
+      ) : (
+        <DigitalClocks timeAsNumber={timeAsNumber} />
+      )}
     </div>
   );
 }

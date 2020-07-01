@@ -1,3 +1,16 @@
 .App {
   background-color: darkgray;
 }
+
+.topContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timezoneForm {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
