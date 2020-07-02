@@ -6,7 +6,7 @@ import AnalogClocks from "./components/AnalogClocks";
 import DigitalClocks from "./components/DigitalClocks";
 
 function App() {
-  const [timeAsNumber, setTimeAsNumber] = useState("");
+  const [location, setLocation] = useState({});
   const [timezoneToDisplay, setTimezoneToDisplay] = useState({
     continent: "",
     city: "",
@@ -16,18 +16,8 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const city = timezone.city.split(" ").join("_");
-
-    axios
-      .get(`http://worldtimeapi.org/api/timezone/${timezone.continent}/${city}`)
-      .then((res) => {
-        console.log(res.data.datetime);
-        setTimeAsNumber(res.data.datetime);
-      })
-      .catch((err) => {
-        console.log(err.message);
-      });
+    setLocation({ ...timezone, city: city });
     setTimezoneToDisplay(timezone);
     setTimezone({ continent: "America", city: "" });
   };
@@ -108,9 +98,9 @@ function App() {
         </h4>
       </div>
       {bottomContainer ? (
-        <AnalogClocks timeAsNumber={timeAsNumber} />
+        <AnalogClocks location={location} />
       ) : (
-        <DigitalClocks timeAsNumber={timeAsNumber} />
+        <DigitalClocks location={location} />
       )}
     </div>
   );

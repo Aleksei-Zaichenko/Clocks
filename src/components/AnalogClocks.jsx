@@ -2,9 +2,8 @@ import React from "react";
 
 export default function AnalogCloks({ timeAsNumber }) {
   return (
-    <div className="analogClocks">
-      <h1>analog</h1>
-      <h2>{timeAsNumber}</h2>
+    <div id="analogClocks">
+      <h1 className="this.state.class">{timeAsNumber}</h1>
     </div>
   );
 }
