@@ -10,7 +10,7 @@ export default function DigitalCloks({ location }) {
         moment().tz(`${location.continent}/${location.city}`).format("HH:mm:ss")
       );
     }, 1000);
-  }, [time]);
+  }, [time, location.continent, location.city]);
 
   return (
     <div className="digitalClocks">

@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
-import axios from "axios";
 
 import AnalogClocks from "./components/AnalogClocks";
 import DigitalClocks from "./components/DigitalClocks";
@@ -37,8 +36,8 @@ function App() {
   return (
     <div className="App">
       <div className="topContainer" style={{ textAlign: "center" }}>
-        <h1>Hi, Welcome to Clocks App</h1>
-        <h2>Enter the continent and the city</h2>
+        <h1 style={{ fontSize: "3rem" }}>Hi, Welcome to Clocks App</h1>
+        <h2 style={{ fontSize: "2.3rem" }}>Enter the continent and the city</h2>
         <form
           className="timezoneForm"
           onSubmit={(event) => {
@@ -81,7 +80,9 @@ function App() {
             Submit
           </button>
         </form>
-        <h3>Select the type of Clocks you want to see:</h3>
+        <h3 style={{ fontSize: "2rem" }}>
+          Select the type of Clocks you want to see:
+        </h3>
         <div className="clocksTypeContainer">
           <button onClick={handleDigital}>Digital</button>
           <button onClick={handleAnalog}>Analog</button>
