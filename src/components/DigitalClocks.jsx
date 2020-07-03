@@ -1,20 +1,21 @@
-import React,{useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import moment from "moment-timezone";
 
 export default function DigitalCloks({ location }) {
+  const [time, setTime] = useState("");
 
-  const [time, setTime] = useState('')
-
-  useEffect(()=>{
-    
-  },[time])
+  useEffect(() => {
+    setTimeout(() => {
+      setTime(
+        moment().tz(`${location.continent}/${location.city}`).format("HH:mm:ss")
+      );
+    }, 1000);
+  }, [time]);
 
   return (
     <div className="digitalClocks">
       <h1>digital</h1>
-      <h2>
-        {moment().tz(`${location.country}/${location.city}`).format("HH:mm:ss")}
-      </h2>
+      <h2>{time}</h2>
     </div>
   );
 }

@@ -17,7 +17,7 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const city = timezone.city.split(" ").join("_");
-    setLocation({ ...timezone, city: city });
+    setLocation({ continent: timezone.continent, city: city });
     setTimezoneToDisplay(timezone);
     setTimezone({ continent: "America", city: "" });
   };
