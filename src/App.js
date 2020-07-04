@@ -80,7 +80,7 @@ function App() {
             Submit
           </button>
         </form>
-        <h3 style={{ fontSize: "2rem" }}>
+        <h3 style={{ fontSize: "1.7rem" }}>
           Select the type of Clocks you want to see:
         </h3>
         <div className="clocksTypeContainer">

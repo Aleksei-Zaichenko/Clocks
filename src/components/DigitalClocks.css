@@ -1,0 +1,11 @@
+.digitalTime {
+  font-family: "Ozone";
+  color: white;
+  font-size: 9rem;
+  padding: 2rem;
+  margin-top: 0.5%;
+  text-align: center;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 6px;
+}

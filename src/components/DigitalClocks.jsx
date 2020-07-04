@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import moment from "moment-timezone";
+import "./DigitalClocks.css";
 
 export default function DigitalCloks({ location }) {
   const [time, setTime] = useState("");
@@ -14,8 +15,7 @@ export default function DigitalCloks({ location }) {
 
   return (
     <div className="digitalClocks">
-      <h1>digital</h1>
-      <h2>{time}</h2>
+      <div className="digitalTime">{time}</div>
     </div>
   );
 }
