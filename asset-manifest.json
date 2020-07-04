@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Clocks/static/css/main.854e13d2.chunk.css",
+    "main.js": "/Clocks/static/js/main.6c3e08b3.chunk.js",
+    "main.js.map": "/Clocks/static/js/main.6c3e08b3.chunk.js.map",
+    "runtime-main.js": "/Clocks/static/js/runtime-main.875446ba.js",
+    "runtime-main.js.map": "/Clocks/static/js/runtime-main.875446ba.js.map",
+    "static/js/2.39867c82.chunk.js": "/Clocks/static/js/2.39867c82.chunk.js",
+    "static/js/2.39867c82.chunk.js.map": "/Clocks/static/js/2.39867c82.chunk.js.map",
+    "index.html": "/Clocks/index.html",
+    "precache-manifest.b77f86cebf41556b489dcad8d874e85d.js": "/Clocks/precache-manifest.b77f86cebf41556b489dcad8d874e85d.js",
+    "service-worker.js": "/Clocks/service-worker.js",
+    "static/css/main.854e13d2.chunk.css.map": "/Clocks/static/css/main.854e13d2.chunk.css.map",
+    "static/js/2.39867c82.chunk.js.LICENSE.txt": "/Clocks/static/js/2.39867c82.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Clocks/static/media/Ozone.1abd8c1a.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.875446ba.js",
+    "static/js/2.39867c82.chunk.js",
+    "static/css/main.854e13d2.chunk.css",
+    "static/js/main.6c3e08b3.chunk.js"
+  ]
+}
