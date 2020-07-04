@@ -45,7 +45,7 @@ function App() {
           }}
         >
           <label>
-            Choose the continent:
+            Choose the continent:{" "}
             <select
               name="continent"
               value={timezone.continent}
@@ -71,7 +71,8 @@ function App() {
           <button
             type="submit"
             style={{
-              width: "17%",
+              fontSize: "1.5rem",
+              width: "19%",
               margin: "0.3% 0",
               padding: "0.5%",
               borderRadius: "6px",
@@ -83,14 +84,18 @@ function App() {
         <h3 style={{ fontSize: "1.7rem" }}>
           Select the type of Clocks you want to see:
         </h3>
-        <div className="clocksTypeContainer">
-          <button onClick={handleDigital}>Digital</button>
-          <button onClick={handleAnalog}>Analog</button>
+        <div className="clocksTypesContainer">
+          <button className="clockType" onClick={handleDigital}>
+            Digital
+          </button>
+          <button className="clockType" onClick={handleAnalog}>
+            Analog
+          </button>
         </div>
         <h4
           style={
             timezoneToDisplay.continent !== "" && timezoneToDisplay.city !== ""
-              ? { display: "block" }
+              ? { display: "block", fontSize: "1.1rem" }
               : { display: "none" }
           }
         >

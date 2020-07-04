@@ -10,8 +10,25 @@
 }
 
 .timezoneForm {
+  font-weight: bold;
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.clocksTypesContainer {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.clockType {
+  font-size: 1.5rem;
+  padding: 0.7rem;
+  border-radius: 8px;
+}
+.clockType:hover {
+  color: white;
+  background-color: LightSlateGray;
 }
